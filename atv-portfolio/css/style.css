@@ -23,6 +23,15 @@ p {
     line-height: 130%;
 }
 
+section h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+
+}
+
 /*
 ====================================================================================================================================
 ESPECIFICO
@@ -44,7 +53,6 @@ section.banner h1 {
     font-weight: bold;
     font-size: 2rem;
     margin: 10px 0 10px 0;
-
 }
 
 section.banner p button {
@@ -55,7 +63,6 @@ section.banner p button {
     margin: 10px 0 50px;
     padding: 5px 10px;
     font-size: 1.2rem;
-
 }
 
 section.posts {
@@ -77,10 +84,103 @@ section.posts ul li {
 section ul li h3 {
     font-weight: bold;
     font-size: 1.1rem;
-
 }
 
 section ul li p {
     margin: 15px 0px 15px 0px;
+}
+
+section.works {
+    padding: 20px 10px 20px 10px;  
+}
+
+section.works ul li {
+    margin: 15px 0;
+}
+
+section.works li h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 130%;
+    margin: 10px 0 0 0;
+}
+
+section.works ul li p. {
+    margin: 10px 0;
+}
+
+section.works ul li p.info {
+    color: #142850;
+}
+
+section.works ul li p.info span {
+    color: white;
+    background-color: #142850;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+section.works ul {
+    border-bottom: 1px solid #8695a4;
+}
+
+footer {
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+footer a {
+    font-size: 2.3rem;
+    margin: 10px 15px;
+}
+
+/*
+====================================================================================================================================
+ESPECIFICO DESKTOP 
+==================================================================================================================================== 
+*/
+
+@media (min-width: 900px) {
+    header ul {
+        display: flex;
+        justify-content: right;
+    }
+    header ul li {
+        margin: 0 10px 0 10px;
+    }
+
+    section.banner {
+        display: flex;
+        flex-direction: row-reverse; 
+        text-align: left;
+        margin: 5vw 10vw 5vw 10vw;
+    }
+
+    section.posts h2, section.works h2 {
+        text-align: left;
+    }
+
+    section.banner .imagem {
+        margin-right: 8vw;
+    }
+
+    section.posts, section.works {
+        padding: 5vw 10vw 5vw 10vw;
+    }
+
+    section.posts ul, section.works ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    section.posts ul li, section.works ul li {
+        width: 45%;
+    }
+
+    section.works ul {
+        border: none
+    }
+
+
 
 }
